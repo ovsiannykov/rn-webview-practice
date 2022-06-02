@@ -1,13 +1,14 @@
 import React from 'react';
 import {WebView} from 'react-native-webview';
 
+import {myHtmlJust} from '../data/htmlJust';
+
 const Html = () => {
   return (
     <WebView
       source={{
-        html: '<h1>Hello!</h1> <style>h1 {color: #a60028; font-size: 100px; margin-top: 120px; text-align: center;}</style>',
+        html: myHtmlJust,
       }}
-      scalesPageToFit={false}
     />
   );
 };
