@@ -14,7 +14,13 @@ const HomeScreen = ({navigation}) => {
           // eslint-disable-next-line react-native/no-inline-styles
           style={{marginTop: 20, ...styles.button}}
           onPress={() => navigation.navigate('Html')}>
-          <Text style={styles.buttonTitle}>HTML</Text>
+          <Text style={styles.buttonTitle}>HTML: no ViewPort</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{marginTop: 20, ...styles.button}}
+          onPress={() => navigation.navigate('HtmlViewport')}>
+          <Text style={styles.buttonTitle}>HTML with ViewPort</Text>
         </TouchableOpacity>
         <TouchableOpacity
           // eslint-disable-next-line react-native/no-inline-styles

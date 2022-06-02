@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SiteScreen from '../screens/SiteScreen';
 import Html from '../screens/Html';
 import LocalFile from '../screens/LocalFile';
+import HtmlViewport from '../screens/HtmlViewport';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ const MyStack = () => {
         }}
       />
       <Stack.Screen name="Html" component={Html} />
+      <Stack.Screen name="HtmlViewport" component={HtmlViewport} />
       <Stack.Screen name="LocalFile" component={LocalFile} />
     </Stack.Navigator>
   );
