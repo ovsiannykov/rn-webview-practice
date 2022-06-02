@@ -11,9 +11,16 @@ const HomeScreen = ({navigation}) => {
           <Text style={styles.buttonTitle}>memCrab site</Text>
         </TouchableOpacity>
         <TouchableOpacity
+          // eslint-disable-next-line react-native/no-inline-styles
           style={{marginTop: 20, ...styles.button}}
           onPress={() => navigation.navigate('Html')}>
           <Text style={styles.buttonTitle}>HTML</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{marginTop: 20, ...styles.button}}
+          onPress={() => navigation.navigate('LocalFile')}>
+          <Text style={styles.buttonTitle}>LocalFile</Text>
         </TouchableOpacity>
       </View>
     </View>

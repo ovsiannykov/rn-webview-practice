@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import SiteScreen from '../screens/SiteScreen';
 import Html from '../screens/Html';
+import LocalFile from '../screens/LocalFile';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ const MyStack = () => {
         }}
       />
       <Stack.Screen name="Html" component={Html} />
+      <Stack.Screen name="LocalFile" component={LocalFile} />
     </Stack.Navigator>
   );
 };
