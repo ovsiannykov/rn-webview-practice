@@ -8,7 +8,12 @@ const HomeScreen = ({navigation}) => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('SiteScreen')}>
-          <Text style={styles.buttonTitle}>Visit Site</Text>
+          <Text style={styles.buttonTitle}>memCrab site</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{marginTop: 20, ...styles.button}}
+          onPress={() => navigation.navigate('Html')}>
+          <Text style={styles.buttonTitle}>HTML</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -27,6 +32,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
     backgroundColor: '#a60028',
     borderRadius: 2,
+    alignItems: 'center',
   },
   buttonTitle: {
     color: 'white',

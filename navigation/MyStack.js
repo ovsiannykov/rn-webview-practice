@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeScreen from '../screens/HomeScreen';
 import SiteScreen from '../screens/SiteScreen';
+import Html from '../screens/Html';
 
 const Stack = createStackNavigator();
 
@@ -15,7 +16,13 @@ const MyStack = () => {
           backgroundColor: '#a60028',
         },
       }}>
-      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{
+          title: 'WebView',
+        }}
+      />
       <Stack.Screen
         name="SiteScreen"
         component={SiteScreen}
@@ -23,6 +30,7 @@ const MyStack = () => {
           title: 'memCrab',
         }}
       />
+      <Stack.Screen name="Html" component={Html} />
     </Stack.Navigator>
   );
 };
